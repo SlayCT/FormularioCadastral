@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário Cadastral</title>
+</head>
+<body>
+    <h1>Formulário Cadastral</h1>
+    <form>
+      
+        <fieldset>
+            <legend> <strong>Dados Pessoais</strong></legend>
+
+            <label for="nome">Nome Completo:</label>
+          <br>
+            <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+          <br><br>
+          
+
+            <label for="email">Email:</label>
+          <br>
+            <input type="email" id="email" name="email" required>
+          <br><br>
+          
+
+            <label for="senha">Senha:</label>
+          <br>
+            <input type="password" id="senha" name="senha" minlength="6" required>
+          <br><br>
+
+          
+            <label for="telefone">Telefone:</label>
+          <br>
+          <input type="tel" pattern="\(\d{2}\)\d{4,5}-\d{4}" id="telefone" placeholder="Apenas números">
+          <br><br>
+          
+
+            <label for="data_nasc">Data de nascimento:</label>
+          <br>
+            <input type="date" id="data_nasc" name="data_nasc" required>
+          <br><br>
+
+            <label>Gênero:</label>
+          <br>
+            <input type="radio" id="masc" name="genero" value="Masculino" required>
+            <label for="masc">Masculino
+            </label>
+            <input type="radio" id="fem" name="genero" value="Feminino">
+            <label for="fem">Feminino</label>
+            <input type="radio" id="outro" name="genero" value="Outro">
+            <label for="outro">Outro</label>
+        </fieldset>
+        <br>
+
+      
+        <fieldset>
+            <legend><strong>Endereço</strong></legend>
+
+            <label for="rua">Rua:</label>
+          <br>
+            <input type="text" id="rua" name="rua" required>
+          <br><br>
+
+            <label for="numero">Número:</label>
+          <br>
+            <input type="number" id="numero" name="numero" required>
+          <br><br>
+
+            <label for="bairro">Bairro:</label>
+          <br>
+            <input type="text" id="bairro" name="bairro" required>
+          <br><br>
+
+            <label for="cidade">Cidade:</label>
+          <br>
+            <input type="text" id="cidade" name="cidade" required>
+          <br><br>
+
+            <label for="estado">Estado:</label>
+      <br/>
+      <select name="select" id="estado" name="estado">
+      <option value="AC">
+        Acre
+      </option>
+      <option value="AL">
+        Alagoas
+      </option>
+      <option value="AP">
+        Amapá 
+      </option>
+      <option value="AM">
+        Amazonas
+      </option>
+      <option value="BA">
+        Bahia
+      </option>
+      <option value="CE">
+        Ceará 
+      </option>
+      <option value="DF">
+        Distrito Federal
+        </option>
+      <option value="ES">
+        Espírito Santo
+      </option>
+      <option value="GO">
+        Goiás 
+      </option>
+      <option value="MA">
+        Maranhão 
+      </option>
+      <option value="MT">
+        Mato Grosso
+      </option>
+      <option value="MS">
+        Mato Grosso do Sul
+      </option>
+      <option value="MG">
+        Minas Gerais 
+      </option>
+      <option value="PA">
+        Pará 
+      </option>
+      <option value="PB">
+        Paraíba
+      </option>
+      <option value="PR">
+        Paraná
+      </option>
+      <option value="PE">
+        Pernambuco 
+      </option>
+      <option value="PI">
+        Piauí
+      </option>
+      <option value="RJ">
+        Rio de Janeiro
+      </option>
+      <option value="RN">
+        Rio Grande do Norte
+      </option>
+      <option value="RS">
+        Rio Grande do Sul
+      </option>
+        <option value="RO">
+          Rondônia 
+        </option>
+        <option value="RR">
+          Roraima
+        </option>
+        <option value="SC">
+          Santa Catarina 
+        </option>
+        <option value="SP">
+          São Paulo
+        </option>
+        <option value="SE">
+          Sergipe
+        </option>
+        <option value="TO">
+          Tocantins
+        </option>
+            </select>
+              <br><br>
+
+            <label for="cep">CEP:</label>
+              <br>
+            <input type="text" id="cep" name="cep" pattern="\d{8}" required placeholder="Somente números">
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend><strong>Preferências</strong></legend>
+
+            <label>Interesses:</label>
+          <br>
+            <input type="checkbox" id="tec" name="interesses" value="Tecnologia">
+            <label for="tec">Tecnologia</label>
+            <input type="checkbox" id="esp" name="interesses" value="Esportes">
+            <label for="esp">Esportes</label>
+            <input type="checkbox" id="mus" name="interesses" value="Música">
+            <label for="mus">Música</label>
+          <br><br>
+
+            <label for="cor">Cor favorita:</label>
+          <br>
+            <input type="color" id="cor" name="cor">
+          <br><br>
+
+            <label for="hora">Melhor horário para contato:</label>
+          <br>
+            <input type="time" id="hora" name="hora">
+        </fieldset>
+        <br><br>
+
+      
+        <fieldset>
+            <legend><strong>Foto de Perfil</strong></legend>
+            <label for="foto">Escolha uma imagem:</label>
+          <br>
+            <input type="file" id="foto" name="foto" accept="image/*">
+        </fieldset>
+        <br>
+
+        <button type="reset">Limpar Formulário</button>
+        <button type="submit">Cadastrar</button>
+      <br> <br>
+    </form>
+
+</body>
+</html>
